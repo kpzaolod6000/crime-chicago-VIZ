@@ -97,17 +97,17 @@ for (var i = 0; i < arr.length; i++) {
         .attr("stroke", 'white')
 }
 
-for (var i = 0; i < arr.length; i++) {
-    svg.append("polygon").data([arr[i]])
-        .attr("points", function (d) {
-            return d.map(function (d) {
-                return [x2(d[0]), y(d[1])].join(",");
-            }).join(" ");
-        })
-        .attr('stroke-width', 1.5)
-        .attr("fill", '#D0D0D0')
-        .attr("stroke", 'white')
-}
+// for (var i = 0; i < arr.length; i++) {
+//     svg.append("polygon").data([arr[i]])
+//         .attr("points", function (d) {
+//             return d.map(function (d) {
+//                 return [x2(d[0]), y(d[1])].join(",");
+//             }).join(" ");
+//         })
+//         .attr('stroke-width', 1.5)
+//         .attr("fill", '#D0D0D0')
+//         .attr("stroke", 'white')
+// }
 
 function tt_s() {
     var target = document.getElementById('slide')
@@ -242,61 +242,61 @@ svg.append('text')
     .attr("font-family", "sans-serif")
     .attr("fill", 'gray')
 
-svg.append('text')
-    .attr('x', 890)
-    .attr('y', 500)
-    .text('10Km')
-    .style('font-size', '12px')
-    .attr("font-family", "sans-serif")
-    .attr("fill", 'gray')
+// svg.append('text')
+//     .attr('x', 890)
+//     .attr('y', 500)
+//     .text('10Km')
+//     .style('font-size', '12px')
+//     .attr("font-family", "sans-serif")
+//     .attr("fill", 'gray')
 
-svg.append("rect")
-    .attr('x', 835)
-    .attr('y', 510)
-    .attr('width', 80)
-    .attr('height', 5)
-    .attr('fill', 'rgb(0,0,0)')
+// svg.append("rect")
+//     .attr('x', 835)
+//     .attr('y', 510)
+//     .attr('width', 80)
+//     .attr('height', 5)
+//     .attr('fill', 'rgb(0,0,0)')
 
 var cl = [[830,400],[850,400],[840,380]]
 var al = [[830,430],[850,430],[840,410]]
 
-svg.append("polygon").data([cl])
-    .attr("points", function (d) {
-        return d.map(function (d) {
-            return [d[0], d[1]].join(",");
-        }).join(" ");
-    })
-    .attr('stroke-width', 1.5)
-    .attr("fill", 'red')
-    .attr('fill-opacity', 0.7)
-    .attr("stroke", 'white')
+// svg.append("polygon").data([cl])
+//     .attr("points", function (d) {
+//         return d.map(function (d) {
+//             return [d[0], d[1]].join(",");
+//         }).join(" ");
+//     })
+//     .attr('stroke-width', 1.5)
+//     .attr("fill", 'red')
+//     .attr('fill-opacity', 0.7)
+//     .attr("stroke", 'white')
 
-svg.append('text')
-    .attr('x', 855)
-    .attr('y', 400)
-    .text('High Crime Rate Zone')
-    .style('font-size', '16px')
-    .attr("font-family", "sans-serif")
-    .attr("fill", 'gray')
+// svg.append('text')
+//     .attr('x', 855)
+//     .attr('y', 400)
+//     .text('High Crime Rate Zone')
+//     .style('font-size', '16px')
+//     .attr("font-family", "sans-serif")
+//     .attr("fill", 'gray')
 
-svg.append("polygon").data([al])
-    .attr("points", function (d) {
-        return d.map(function (d) {
-            return [d[0], d[1]].join(",");
-        }).join(" ");
-    })
-    .attr('stroke-width', 1.5)
-    .attr("fill", 'blue')
-    .attr('fill-opacity', 0.7)
-    .attr("stroke", 'white')
+// svg.append("polygon").data([al])
+//     .attr("points", function (d) {
+//         return d.map(function (d) {
+//             return [d[0], d[1]].join(",");
+//         }).join(" ");
+//     })
+//     .attr('stroke-width', 1.5)
+//     .attr("fill", 'blue')
+//     .attr('fill-opacity', 0.7)
+//     .attr("stroke", 'white')
 
-svg.append('text')
-    .attr('x', 855)
-    .attr('y', 430)
-    .text('Low Arrest Rate Zone')
-    .style('font-size', '16px')
-    .attr("font-family", "sans-serif")
-    .attr("fill", 'gray')
+// svg.append('text')
+//     .attr('x', 855)
+//     .attr('y', 430)
+//     .text('Low Arrest Rate Zone')
+//     .style('font-size', '16px')
+//     .attr("font-family", "sans-serif")
+//     .attr("fill", 'gray')
 
 var Crime_Sort = [[11, 6, 8],
 [11, 6, 8],
