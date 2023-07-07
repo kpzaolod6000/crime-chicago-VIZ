@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+</html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h2>&nbsp;[ Crime Rate & Arrest Rate by District, Year ]&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[ Dangerous Zone 09' ~ 18' ]</h2>
+    </div>
+    <div>
+        &emsp;&emsp;
+        <input id='Crime' type='checkbox' onchange="drawMap()">Crime
+        Rate&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input id='slide' type='range' value='0' min='0' max='9' onchange="tt_s()"> Year&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Start
+        <select id = sel1 onchange="drawZone()">
+            <option value="0">2009</option>
+            <option value="1">2010</option>
+            <option value="2">2011</option>
+            <option value="3">2012</option>
+            <option value="4">2013</option>
+            <option value="5">2014</option>
+            <option value="6">2015</option>
+            <option value="7">2016</option>
+            <option value="8">2017</option>
+            <option value="9">2018</option>
+        </select>
+        &emsp;&emsp;End
+        <!-- <select id=sel2 onchange="drawZone()">
+            <option value="1">2009</option>
+            <option value="2">2010</option>
+            <option value="3">2011</option>
+            <option value="4">2012</option>
+            <option value="5">2013</option>
+            <option value="6">2014</option>
+            <option value="7">2015</option>
+            <option value="8">2016</option>
+            <option value="9">2017</option>
+            <option value="10">2018</option>
+        </select> -->
+        <!-- &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&thinsp;
+        <input id = sel_c_1 type="checkbox" onchange="drawZone()">Crime Rate -->
+    </div>
+    <div>
+        &emsp;&emsp;
+        <input id='Arrest' type='checkbox' onchange="drawMap()">Arrest
+        Rate&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;09&nbsp;I&thinsp;&nbsp;I&thinsp;&nbsp;I&thinsp;&nbsp;I&thinsp;&nbsp;I&thinsp;&nbsp;I&thinsp;&nbsp;I&thinsp;&nbsp;I&thinsp;18
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input id = sel_c_2 type="checkbox" onchange="drawZone()">Arrest Rate
+    </div>
+    <div class='map'></div>
+    <script src='./src/data.js'></script>
+    <div>
+        <h6>&emsp;&emsp;No Problem&emsp;&emsp;&emsp;&emsp;High Crime Rate&emsp;&emsp;&emsp;&emsp;Both&emsp;&emsp;&emsp;&emsp;Low Arreset Rate&emsp;&emsp;&emsp;&emsp;No Problem</h6>
+    </div>
+</body>
+
+</html>
